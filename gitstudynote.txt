@@ -1,0 +1,26 @@
+一.添加sensor code
+    1).拷贝代码到android/kernel/drivers/gosodrv/sensor/文件夹下；
+    2).修改./目录的Makefile文件，和../目录下的config文件
+    3).查看内核版本号：cat /andriod/vendor/.../AndriodBoard.mk
+        例如：KERNEL_DEFCONFIG := fa1602_defconfig
+    4).修改  android/kernel/arch/arm/configs/内核对应的config文件
+    5).修改 android/kernel/arch/arm/boot/dts/qcom/对应内核的dtsi文件
+    6).编译测试
+       a) source build/envsetup.sh
+       b) lunch
+       c) make bootimage -j?
+二.内核烧写测试(*#8702#)
+    1). adb root 
+    2). adb reboot bootloader
+    2). fastboot flash boot out/target/product/.../boot.img
+    3). fastboot reboot
+    4). adb root
+    5). adb shell getevent -l
+三.代码同步
+    1).repo sync ./同步当前目录
+    2).git cherry-pick  <commit> 合并commit的修改
+    3).git reset --soft <commit>
+        index和working directory中的内容不作任何改变，仅仅把HEAD指向<commit>
+    4).git commit --amend 
+        重复上一次提交
+

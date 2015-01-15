@@ -1,0 +1,2 @@
+1). vim 格式化 C 和 Makefile 代码文件
+    http://blog.chinaunix.net/uid-24774106-id-3396220.html
