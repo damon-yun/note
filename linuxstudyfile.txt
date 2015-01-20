@@ -1,0 +1,8 @@
+Linux设备驱动开发
+http://blog.csdn.net/wanchres/article/category/913940
+    1)linux中断小任务(tasklet)机制举例 
+    http://blog.csdn.net/wanchres/article/details/6966405
+
+    2)linux中断程序 
+    http://blog.csdn.net/wanchres/article/details/6966072
+
