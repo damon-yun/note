@@ -14,3 +14,6 @@
 
     删除行尾空格：
     非编辑状态下输入:%s/\s*$//g
+4) 使用帮助文档
+   http://blog.csdn.net/dengxiayehu/article/details/6330200
+   http://blog.csdn.net/luckywang1103/article/details/44181557
