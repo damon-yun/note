@@ -1,0 +1,10 @@
+Ubuntu搭建linux驱动编译环境
+
+内核源码安装
+1、下载源码：sudo apt-get install linux-source
+   等方式；
+2、到原来内核目录执行sudo make oldconfig
+3、到新内核源码执行sudo make
+注：错误处理
+    1）scripts/basic/fixdep.c:449:1: fatal error: opening dependency file scripts/basic/.fixdep.d: Permissi；
+       执行sudo apt-get install libssl-dev
